@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXUS</title>
+  <meta name="description" content="NEXUS turns “I want to do X” into the people, context, decisions and actions required to do X, with your approval.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231d6b52'/><circle cx='10' cy='11' r='3' fill='white'/><circle cx='22' cy='11' r='3' fill='white'/><circle cx='16' cy='22' r='3' fill='white'/><path d='M10 11L22 11L16 22Z' stroke='white' stroke-width='1.5' fill='none'/></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <a href="#/home" class="logo"><span class="logo-mark"></span>NEXUS</a>
+    <nav class="nav">
+      <a href="#/home" data-nav="home">Home</a>
+      <a href="#/discover" data-nav="discover">Discover</a>
+      <a href="#/community/com_friday_football" data-nav="community">Community</a>
+      <a href="#/event/evt_001" data-nav="event">Event</a>
+      <a href="#/me" data-nav="me">My Space</a>
+    </nav>
+    <div class="top-actions">
+      <button class="btn ghost small" id="trace-btn" title="See the API calls and realtime events">Under the hood</button>
+      <button class="btn ghost small" id="reset" title="Reset demo data">Reset</button>
+    </div>
+  </header>
+
+  <main id="view"></main>
+
+  <aside id="trace" class="trace" aria-label="API trace">
+    <div class="trace-head"><b>Under the hood</b><span class="muted small">API calls &amp; realtime events, newest first</span><button class="btn ghost small" id="trace-close">Close</button></div>
+    <div id="trace-list"></div>
+  </aside>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
